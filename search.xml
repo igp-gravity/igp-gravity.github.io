@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2018%2F01%2F20%2Ftest.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[today]]></title>
+    <url>%2F2018%2F01%2F20%2Ftoday.html</url>
+    <content type="text"><![CDATA[####今天工作很顺利，天气也很好]]></content>
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[知识图谱点滴]]></title>
+    <url>%2F2018%2F01%2F18%2Fkb.html</url>
+    <content type="text"><![CDATA[关于知识图谱的技术发展，已经看了一段时间资料了，一点知识留此存照 知识图谱文献]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[新年第一贴]]></title>
+    <url>%2F2018%2F01%2F16%2Fmy-first-blog.html</url>
+    <content type="text"><![CDATA[新领地建好了github pages + Hexo + Next为我提供了新的工作平台，Cheers！]]></content>
+      <tags>
+        <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[小店开张喽！！！]]></title>
+    <url>%2F2018%2F01%2F16%2Fhello-world.html</url>
+    <content type="text"><![CDATA[欢迎来到 小G俱乐部! 地震科研助手经过2017年的积累，有了一个不错的开局，而2018年是新的征程即将开启。首先，作为流程化技术支撑Datist软件，正式推出了官方文档 . 其次，通过在 GitHub建立开放的仓库，期望能进一步吸收社会化编程的积极思想，推动构建地震行业的业务平台建设进程. 展望2018新的目标1以新的科技的力量，为地震行业业务体制改革提供技术保障。 新的起点1大数据、人工智能和平台技术三股力量同时发力。 新的任务1打造防震减灾领域互联网+型的新生态系统。]]></content>
+  </entry>
+</search>
