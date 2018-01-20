@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
+        <lastmod>2018-01-20T10:39:15.140Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://igp-gravity.github.io/2018/01/18/kb.html</loc>
         <lastmod>2018-01-20T04:04:55.967Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,14 +25,6 @@
     <url>
         <loc>https://igp-gravity.github.io/2018/01/20/today.html</loc>
         <lastmod>2018-01-20T00:49:51.168Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
-        <lastmod>2018-01-20T00:43:32.689Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
