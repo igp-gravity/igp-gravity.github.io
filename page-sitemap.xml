@@ -8,21 +8,21 @@
     
     <url>
         <loc>https://igp-gravity.github.io/schedule/</loc>
-        <lastmod>2018-01-21T01:16:54.380Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://igp-gravity.github.io/categories/</loc>
-        <lastmod>2018-01-21T00:42:29.289Z</lastmod>
+        <lastmod>2018-01-21T01:43:38.138Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://igp-gravity.github.io/tags/</loc>
-        <lastmod>2018-01-21T00:41:57.509Z</lastmod>
+        <lastmod>2018-01-21T01:42:05.304Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://igp-gravity.github.io/categories/</loc>
+        <lastmod>2018-01-21T01:41:58.810Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
