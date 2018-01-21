@@ -25,8 +25,13 @@
     <title><![CDATA[新年第一贴]]></title>
     <url>%2F2018%2F01%2F16%2Fmy-first-blog.html</url>
     <content type="text"><![CDATA[新领地建好了github pages + Hexo + Next为我提供了新的工作平台，Cheers！]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
       <tags>
-        <tag>工作</tag>
+        <tag>IT</tag>
+        <tag>github</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>

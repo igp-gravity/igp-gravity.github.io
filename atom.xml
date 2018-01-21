@@ -88,7 +88,7 @@
     <link href="https://igp-gravity.github.io/2018/01/16/my-first-blog.html"/>
     <id>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</id>
     <published>2018-01-16T14:55:52.000Z</published>
-    <updated>2018-01-17T02:27:37.311Z</updated>
+    <updated>2018-01-21T00:44:50.210Z</updated>
     
     <content type="html"><![CDATA[<h4 id="新领地建好了"><a href="#新领地建好了" class="headerlink" title="新领地建好了"></a>新领地建好了</h4><p>github pages + Hexo + Next为我提供了新的工作平台，Cheers！</p>]]></content>
     
@@ -102,8 +102,14 @@
     
     </summary>
     
+      <category term="工作" scheme="https://igp-gravity.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
     
-      <category term="工作" scheme="https://igp-gravity.github.io/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+      <category term="IT" scheme="https://igp-gravity.github.io/tags/IT/"/>
+    
+      <category term="github" scheme="https://igp-gravity.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="https://igp-gravity.github.io/tags/hexo/"/>
     
   </entry>
   

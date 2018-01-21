@@ -3,6 +3,33 @@
 
     
   <url>
+    <loc>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</loc>
+    <lastmod>2018-01-21T00:44:50.210Z</lastmod>
+    <data>
+        <display>
+        <title>新年第一贴</title>
+        <pubTime>2018-01-16T14:55:52.000Z</pubTime>
+        
+        <tag>IT </tag>
+         
+        <tag>github </tag>
+         
+        <tag>hexo </tag>
+         
+         
+           
+             
+              <breadCrumb title="工作" url="https://igp-gravity.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
+  <url>
     <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
     <lastmod>2018-01-20T10:51:14.012Z</lastmod>
     <data>
@@ -41,23 +68,6 @@
         <display>
         <title>today</title>
         <pubTime>2018-01-19T16:54:11.000Z</pubTime>
-        
-        <tag>工作 </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</loc>
-    <lastmod>2018-01-17T02:27:37.311Z</lastmod>
-    <data>
-        <display>
-        <title>新年第一贴</title>
-        <pubTime>2018-01-16T14:55:52.000Z</pubTime>
         
         <tag>工作 </tag>
          
