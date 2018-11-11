@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>https://igp-gravity.github.io/2018/11/11/geoist181111.html</loc>
+        <lastmod>2018-11-11T01:48:00.157Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/01/22/chenshi01.html</loc>
+        <lastmod>2018-01-22T00:58:10.405Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/01/21/paper1.html</loc>
+        <lastmod>2018-01-21T08:22:02.424Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</loc>
         <lastmod>2018-01-21T00:44:50.210Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,7 +40,7 @@
 
     <url>
         <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
-        <lastmod>2018-01-20T10:51:14.012Z</lastmod>
+        <lastmod>2018-01-20T10:51:14.013Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +48,7 @@
 
     <url>
         <loc>https://igp-gravity.github.io/2018/01/18/kb.html</loc>
-        <lastmod>2018-01-20T04:04:55.967Z</lastmod>
+        <lastmod>2018-01-20T04:04:55.968Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,14 +56,14 @@
 
     <url>
         <loc>https://igp-gravity.github.io/2018/01/20/today.html</loc>
-        <lastmod>2018-01-20T00:49:51.168Z</lastmod>
+        <lastmod>2018-01-20T00:49:51.169Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/01/16/hello-world.html</loc>
+        <loc>https://igp-gravity.github.io/2018/02/03/hello-world.html</loc>
         <lastmod>2018-01-17T02:22:22.720Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
