@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[geoist20181114]]></title>
+    <url>%2F2018%2F11%2F14%2Fgeoist20181114.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[什么是Geoist？]]></title>
     <url>%2F2018%2F11%2F13%2Fgeoist20181113.html</url>
     <content type="text"><![CDATA[基于Python的开源地球物理软件包-Geoist Geoist是基于Python语言的开源程序包，面向地球物理研究生、教学科研人员，也可为原型化的地球物理算法设计和科研提供基础软件服务。程序包功能包括：重磁位场数据处理、反演解释和模型评估；高精度时变重力数据平差等。 该程序包采用MIT开源协议，并在Github上进行公开发布和维护，代码编写遵循PEP8规范。Geoist程序包采用模块化设计，用户可基于Geoist程序包进行二次开发和集成应用。 项目网站：https://github.com/igp-gravity/geoist 更多关于Geoist]]></content>
