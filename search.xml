@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[纪念第一个DevOps项目框架完成]]></title>
+    <url>%2F2018%2F11%2F25%2Fgeoist20181126.html</url>
+    <content type="text"><![CDATA[我们第一个地球物理开源项目，期望这是梦想的开始… 经过2周多组里的人努力工作，终于完成了一套协同工作环境 自动化文档、自动化集成和自动化部署，世界变化真快，从今开始实践Agile的软件设计方法 项目地址https://github.com/igp-gravity/geoist 参考文档https://geoist.readthedocs.io 我们的组织也有了，欢迎大家一起和我们践行现代化软件研发实践和共享精神https://github.com/gravity-igpcea 看着这些小图标，是不是有点高大上]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Jupyter NB秒变微服务的利器]]></title>
+    <url>%2F2018%2F11%2F25%2Fgeoist20181125.html</url>
+    <content type="text"><![CDATA[Jupyter Kernel Gateway这个工具可以帮你把写好的notebook变为REST api 原文可参考：https://ndres.me/post/jupyter-notebook-rest-api/ 安装1conda install -c conda-forge jupyter_kernel_gateway 启动1jupyter kernelgateway 在这个kernel的基础上，还可以进一步使用Jupyter Enterprise Gateway将你的cluster集群变成服务群。 这个项目的地址可以找到更多参考信息：https://github.com/jupyter/enterprise_gateway]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Geoist自定义节点]]></title>
     <url>%2F2018%2F11%2F15%2Fgeoist20181115.html</url>
-    <content type="text"><![CDATA[今天的工作进展 第一 1第二 第三]]></content>
+    <content type="text"><![CDATA[今天的工作进展 第一，实现了自定义界面的设计，通过数据源绑定和参数设计，采用vue框架下的HTML设计，可以提高用户体验； 第二，初步完成了5个节点的封装，实现了Pandas的Dataframe数据类型和网格Grid两种类型的数据处理和流转； 第三，注册到Datist节点库，并在Geoist的GitHub线上的extension目录下进行统一管理。]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[新的Geoist图标诞生了]]></title>
     <url>%2F2018%2F11%2F14%2Fgeoist20181114.html</url>
     <content type="text"><![CDATA[Geoist图标设计 开源的Geoist软件包，很快就要和大家见面了，DevOps的持续交付软件实践，为地学开源软件贡献一份力量。]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[什么是Geoist？]]></title>

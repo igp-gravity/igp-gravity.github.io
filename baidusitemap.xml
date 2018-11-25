@@ -3,13 +3,32 @@
 
     
   <url>
-    <loc>https://igp-gravity.github.io/2018/11/15/geoist20181115.html</loc>
-    <lastmod>2018-11-15T15:53:35.374Z</lastmod>
+    <loc>https://igp-gravity.github.io/2018/11/25/geoist20181126.html</loc>
+    <lastmod>2018-11-25T12:49:38.739Z</lastmod>
     <data>
         <display>
-        <title>Geoist自定义节点</title>
-        <pubTime>2018-11-15T15:42:39.000Z</pubTime>
+        <title>纪念第一个DevOps项目框架完成</title>
+        <pubTime>2018-11-25T12:36:34.000Z</pubTime>
         
+        <tag>geoist </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/11/25/geoist20181125.html</loc>
+    <lastmod>2018-11-25T12:33:38.551Z</lastmod>
+    <data>
+        <display>
+        <title>Jupyter NB秒变微服务的利器</title>
+        <pubTime>2018-11-25T12:19:11.000Z</pubTime>
+        
+        <tag>geoist </tag>
+         
          
            
         </display>
@@ -19,12 +38,31 @@
     
   <url>
     <loc>https://igp-gravity.github.io/2018/11/14/geoist20181114.html</loc>
-    <lastmod>2018-11-15T15:45:37.222Z</lastmod>
+    <lastmod>2018-11-25T12:24:39.654Z</lastmod>
     <data>
         <display>
         <title>新的Geoist图标诞生了</title>
         <pubTime>2018-11-14T13:01:54.000Z</pubTime>
         
+        <tag>geoist </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/11/15/geoist20181115.html</loc>
+    <lastmod>2018-11-25T12:24:35.663Z</lastmod>
+    <data>
+        <display>
+        <title>Geoist自定义节点</title>
+        <pubTime>2018-11-15T15:42:39.000Z</pubTime>
+        
+        <tag>geoist </tag>
+         
          
            
         </display>

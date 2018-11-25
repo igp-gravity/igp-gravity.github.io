@@ -7,8 +7,16 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/15/geoist20181115.html</loc>
-        <lastmod>2018-11-15T15:53:35.374Z</lastmod>
+        <loc>https://igp-gravity.github.io/2018/11/25/geoist20181126.html</loc>
+        <lastmod>2018-11-25T12:49:38.739Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/25/geoist20181125.html</loc>
+        <lastmod>2018-11-25T12:33:38.551Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +24,15 @@
 
     <url>
         <loc>https://igp-gravity.github.io/2018/11/14/geoist20181114.html</loc>
-        <lastmod>2018-11-15T15:45:37.222Z</lastmod>
+        <lastmod>2018-11-25T12:24:39.654Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/15/geoist20181115.html</loc>
+        <lastmod>2018-11-25T12:24:35.663Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
