@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[测试Kubernetes部署和容器服务]]></title>
+    <url>%2F2018%2F11%2F27%2Fgeoist20181127.html</url>
+    <content type="text"><![CDATA[通过 microk8s使用Kubernetes结合Azure pipeline实现CD工作 折腾了几天MS的Azure pipeline在build阶段的任务终于配置好了，但是在release阶段一直没搞定。今天用了1元券在MS的Azure上面开了一个虚拟机，准备装个大名鼎鼎的k8s，世纪互联上总是比国外的慢不少，虽然是官方在11月中旬已经宣布登陆中国市场，但是在国内Azure上还没找到，自己手动装一个吧。前面坑不少，这几天总算把Azure DevOps的部署环境搞明白了，界面比Travis-CI高大上，但是感觉坑比那个多一些，没办法先当小白吧，一个一个坑爬过去，先把经验写到这里以便给自己给可能需要的人一些帮助… 在Azure世纪互联建立Ubuntu LTS虚拟机，通过Snap安装microk8s。 microk8s是一个简化版的kube用于测试和单机部署，一行命令即可完成安装。 1snap install microk8s --classic 为了不和已经安装的 kubectl 产生冲突，microk8s 有自己的 microk8s.kubectl 命令 1microk8s.kubectl get services 如果本地没有 kubectl 命令可以增加一个别名 1snap alias microk8s.kubectl kubectl 或者取消 1snap unalias kubectl API 服务监听 8080 端口,如果是在Azure云上面的虚拟机上面安装，需要安全配置里面打开端口 1microk8s.kubectl config view 查看附加组件。 1Kubernetes Addons microk8s 只是最精简的安装，所以只有 api-server, controller-manager, scheduler, kubelet, cni, kube-proxy 被安装运行。额外的服务比如 kube-dns, dashboard 可以通过microk8s.enable 启动 1microk8s.enable dns dashboard 禁用 1microk8s.disable dns dashboard 可用的扩展 dns dashboard storage ingress gpu istio registry metrics-server 停止或重启 microk8s 12snap disable microk8s # 停止snap enable microk8s # 重启 移除 12microk8s.resetsnap remove microk8s 安装完环境后，定义pod，首先要用vi新建一个hello-world-pod.yaml，保存 12345678910apiVersion: v1kind: Podmetadata: name: hello-worldspec: restartPolicy: OnFailure containers: - name: hello image: &quot;ubuntu&quot; command: [&quot;/bin/echo&quot;,&quot;hello”,”world&quot;] 字段解释 12345678910apiVersion: 声明K8s的API版本kind: 声明API对象的类型，这里是Podmetadata:设置Pod的元数据 name: hello-world 指定Pod的名称Pod名称必粗在Namespace内唯一spec:配置Pod的具体规格 restartPolicy: 重启策略 containers:容器规格，数组形式，每一项定义一个容器 - name:指定容器的名称，在Pod的定义中唯一 image:设置容器镜像 command:设置容器的启动命令 定义和创建pod 1kubectl create -f hello-world-pod.yaml 查询pod信息 1kubectl get pod hello-world 输出pod信息 1kubectl get pod hello-world --output json 状态和生命周期查询 1kubectl describe pod hello-world 更多参考：https://github.com/ubuntu/microk8s]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[纪念第一个DevOps项目框架完成]]></title>
     <url>%2F2018%2F11%2F25%2Fgeoist20181126.html</url>
     <content type="text"><![CDATA[我们第一个地球物理开源项目，期望这是梦想的开始… 经过2周多组里的人努力工作，终于完成了一套协同工作环境 自动化文档、自动化集成和自动化部署，世界变化真快，从今开始实践Agile的软件设计方法 项目地址https://github.com/igp-gravity/geoist 参考文档https://geoist.readthedocs.io 我们的组织也有了，欢迎大家一起和我们践行现代化软件研发实践和共享精神https://github.com/gravity-igpcea 看着这些小图标，是不是有点高大上]]></content>
