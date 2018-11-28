@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用Swagger工具生成API文档]]></title>
+    <url>%2F2018%2F11%2F28%2Fgeoist20181129.html</url>
+    <content type="text"><![CDATA[要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。 首先，在swaggerhub.com上面注册一个账户，选免费的即可 根据示例工程，自己在编辑器中修改既可以看到API文档情况。 其次，如果想保存这些API文档，而可以通过设置于Github账号同步，直接同步到github账号下的指定仓库。 保存设计的API接口后，在swaggerHub网站的项目下，找到Add New Integrations，添加一个GitHub sync。保持账户登陆状态既可以生成token到swaggerhub，设置存放仓库路径即可。 我测试了server stub下面的nodejs-server生成类型，同步到github网站后，在客户端用git工具，打开git bash。直接运行 1npm start 最后，如果从git上面下载到本地后。执行正确，在本机输入http://localhost:8080/docs/，可以看到下图： PS:通过自动生成的API文档，可以通过github仓库进行保存，再通过CD工具，可以部署到docker或者远程服务器，将API文档发布出来。当然也可以直接在swaggerhub上面浏览或用第三方工具如ReDoc来直接通过GitHub的pages功能进行发布（由于pages只能发布静态网页，所以nodejs项目的执行必须通过工具先生成静态网页才可以运行，如Hexo建站原理类似）。 github上测试项目地址，https://igp-gravity.github.io/geoistapi/]]></content>
+      <tags>
+        <tag>geoist</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[测试第一个NB微服务]]></title>
     <url>%2F2018%2F11%2F28%2Fgeoist20181128.html</url>
     <content type="text"><![CDATA[尝试了一下kernelgateway的notebook_http功能 因为Geoist的定位就是将封装后的地球物理学代码共享给更多的用户使用，所以让python程序以微服务框架为大家服务是理想的解决方案之一。今天在出差的路上没忍住，亲测了一下让Jupyter Notebook变为微服务的kernelgateway服务。作为Jupyter系列项目中的一个，这个功能还是很酷的，只要通过简单的改造，你的nb程序就可以变成microservice啦 首先启动Jupyter Notebook，写一个ipynb文件，本次测试的代码如下： 开始第一个代码块cell 12import mathimport json 再写第二个代码块 12345678910# GET /convertreq = json.loads(REQUEST)args = req[&apos;args&apos;]if &apos;angle&apos; not in args: print(json.dumps(&#123;&apos;convertedAngle&apos;:None&#125;))else: angle = int(args[&apos;angle&apos;][0]) converted = math.radians(angle) print(json.dumps(&#123;&apos;convertedAngle&apos;:converted&#125;)) 注意上面的# GET /convert，这个是关键，convert代表将来的微服务入口，这个cell的前三行是固定写法，记下来。里面的print是返回的内容。 写好没问题后，保存到本地，注意目录要能通过http访问到。运行命令不容易记，写在这里吧 1jupyter kernelgateway --KernelGatewayApp.api=&apos;kernel_gateway.notebook_http&apos; --KernelGatewayApp.seed_uri=&apos;kgtest.ipynb&apos; ps：如果出现signal相关错误，可以通过尝试conda update ipykernel解决 演示NB脚本 更多kernelgateway的技术手册]]></content>
