@@ -324,6 +324,221 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/11/28/python20181130.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHI CHEN at CEA-IGP">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/chenshi.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MicroG for Earthquake Sciences">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/28/python20181130.html" itemprop="url">Python绘图实践记录</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-28T21:32:54+08:00">
+                2018-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/28/python20181130.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/28/python20181130.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,491 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="用Python进行数据分析少不了绘图工具matplotlib"><a href="#用Python进行数据分析少不了绘图工具matplotlib" class="headerlink" title="用Python进行数据分析少不了绘图工具matplotlib"></a>用Python进行数据分析少不了绘图工具matplotlib</h3><ul>
+<li>matplotlib是免费的python绘图工具，首先，应该确保环境已经安装matplotlib，具体怎么做应该不用说了吧！</li>
+</ul>
+<blockquote>
+<p>matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplotlib常与numpy和scipy相配合，用于许多研究领域。</p>
+</blockquote>
+<h2 id="二维绘图"><a href="#二维绘图" class="headerlink" title="二维绘图"></a>二维绘图</h2><ul>
+<li>基本图形绘制</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">x = np.linspace(0,10,1000)</span><br><span class="line">y = np.sin(x)</span><br><span class="line">z = np.cos(x)</span><br><span class="line">#   配置</span><br><span class="line">plt.figure(figsize=(8,4))       #   框的大小</span><br><span class="line">plt.plot(x,y,label=&apos;$sin(x)$&apos;)</span><br><span class="line">plt.plot(x,z,&apos;b--&apos;,label=&apos;$cos(x)$&apos;)        #   蓝色虚线</span><br><span class="line">plt.xlabel(&quot;Time(s)&quot;)</span><br><span class="line">plt.ylabel(&quot;&quot;)</span><br><span class="line">plt.title(&quot;matplotlib&quot;)</span><br><span class="line">plt.ylim(-1.2, 1.2)</span><br><span class="line">plt.legend()                        #   显示为一个样式</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line">fig = plt.gcf()                         #   获得当前图标的对象</span><br><span class="line">ax = plt.gca()                      #   获得子图的对象</span><br><span class="line">print fig</span><br><span class="line">print ax</span><br></pre></td></tr></table></figure>
+<ul>
+<li>多轴绘图</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#   多轴绘图</span><br><span class="line">#   subplot(numRows, numCols, plotNum)</span><br><span class="line"></span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">for idx, color in enumerate(&quot;rgbyck&quot;):</span><br><span class="line">    plt.subplot(320+idx+1, axisbg=color)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>不同坐标系</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">w = np.linspace(0.1, 1000, 1000)</span><br><span class="line">p = np.abs(1/(1+0.1j*w))</span><br><span class="line"></span><br><span class="line">plt.subplot(221)</span><br><span class="line">plt.plot(w, p, linewidth=2)     #   算术坐标系</span><br><span class="line">plt.ylim(0, 1.5)</span><br><span class="line"></span><br><span class="line">plt.subplot(222)</span><br><span class="line">plt.semilogx(w, p, linewidth=2)     #   x 对数坐标系</span><br><span class="line">plt.ylim(0, 1.5)</span><br><span class="line"></span><br><span class="line">plt.subplot(223)</span><br><span class="line">plt.semilogy(w, p, linewidth=2)     #   y 对数坐标系</span><br><span class="line">plt.ylim(0, 1.5)</span><br><span class="line"></span><br><span class="line">plt.subplot(224)</span><br><span class="line">plt.loglog(w, p, linewidth=2)           #   对数坐标系</span><br><span class="line">plt.ylim(0, 1.5)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>柱状图</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#   1.txt的文本</span><br><span class="line">&gt;&gt;&gt; data</span><br><span class="line">array([[  0.,  10.,  20.,  30.,  40.],</span><br><span class="line">       [ 10.,  23.,  33.,  43.,  53.],</span><br><span class="line">       [ 20.,  83.,  23.,  55.,  33.],</span><br><span class="line">       [ 30.,  93.,  44.,  22.,  55.],</span><br><span class="line">       [ 40.,  72.,  33.,  44.,  66.]])</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">data = np.loadtxt(r&quot;D:\1.txt&quot;)</span><br><span class="line">width = (data[1, 0] - data[0, 0])*0.4       #   柱形的宽带为4</span><br><span class="line"></span><br><span class="line">#   data[:, 0]：所有行数据</span><br><span class="line">#   data[:, 1]：所有列数据    </span><br><span class="line">plt.figure()                        </span><br><span class="line">plt.bar(data[:, 0] - width, data[:, 1], width, label=&apos;person&apos;)  </span><br><span class="line">plt.xlim(-width, 40)                        #   x 的取值区间</span><br><span class="line">plt.xlabel(&quot;Age&quot;)</span><br><span class="line">plt.ylabel(&quot;Num&quot;)</span><br><span class="line"></span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>散点图</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">plt.figure()</span><br><span class="line">x = np.random.rand(100)</span><br><span class="line">y = np.random.rand(100) </span><br><span class="line">#   marker:绘制点的形状和大小，5代表五边形，1是大小        </span><br><span class="line">#      s的默认值是20</span><br><span class="line">plt.scatter(x, y, s=x*1000, c=y, marker=(5,1), lw=2, facecolor=&apos;none&apos;)  </span><br><span class="line">#   marker:绘制点的形状和大小    lw:linewidth    facecolor:颜色</span><br><span class="line">plt.xlim(0, 1)  #  c:cmap不是color，cmap绘制出来是彩图（不同颜色）</span><br><span class="line">plt.ylim(0, 1)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h2 id="三维绘图（mpl-toolkits）"><a href="#三维绘图（mpl-toolkits）" class="headerlink" title="三维绘图（mpl_toolkits）"></a>三维绘图（mpl_toolkits）</h2><ul>
+<li>基本3D图</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#   3D图     </span><br><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.gca(projection=&apos;3d&apos;)       #   projection=&apos;3d&apos; 已经隐性调用了Axes3D</span><br><span class="line"></span><br><span class="line">#   ax = Axes3D(fig)            #   可以加上也可以不加</span><br><span class="line">th = np.linspace(-4 * np.pi, 4 * np.pi, 100)</span><br><span class="line">z = np.linspace(-2, 2, 100)</span><br><span class="line">r = z ** 2 + 1</span><br><span class="line">x = r * np.sin(th)</span><br><span class="line">y = r * np.cos(th)</span><br><span class="line"></span><br><span class="line">ax.plot(x, y, z, label=&apos;hello&apos;)     #   立体的</span><br><span class="line">ax.legend()</span><br><span class="line">plt.show()</span><br><span class="line">ax.plot(x, y, label=&apos;hello&apos;)        #   平面的</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D </span><br><span class="line"></span><br><span class="line">def randrange(n, vmin, vmax):</span><br><span class="line">    return (vmax-vmin)*np.random.rand(n) + vmin</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">n = 100</span><br><span class="line">for c, m, zl, zh in [(&apos;r&apos;, &apos;o&apos;, -50, -25), (&apos;b&apos;, &apos;^&apos;, -30, -5)]:</span><br><span class="line">    xs = randrange(n, 23, 32)</span><br><span class="line">    ys = randrange(n, 0, 100)</span><br><span class="line">    zs = randrange(n, zl, zh)</span><br><span class="line"></span><br><span class="line">    ax.scatter(xs, ys, zs, c=c, marker=m)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;x&apos;)</span><br><span class="line">ax.set_ylabel(&apos;y&apos;)</span><br><span class="line">ax.set_zlabel(&apos;z&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>轮廓图</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import axes3d</span><br><span class="line">from matplotlib import cm</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">X, Y, Z = axes3d.get_test_data(0.05)        #   生成一系列的测试数据</span><br><span class="line">cset = ax.contour(X, Y, Z,cmap=cm.coolwarm) #   contour：生成轮廓图</span><br><span class="line">ax.clabel(cset, fontsize=9, inline=1)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line">#   修改</span><br><span class="line">cset = ax.contour(X, Y, Z,extend3d=True, cmap=cm.coolwarm)      #   颜色的填充</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>3D柱形图</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">for c, z in zip([&apos;r&apos;, &apos;g&apos;, &apos;b&apos;, &apos;y&apos;], (30, 20, 10, 0)):</span><br><span class="line">    x = np.arange(20)</span><br><span class="line">    y = np.random.rand(20)</span><br><span class="line">    cs = [c] * len(x)</span><br><span class="line">    cs[0] = &apos;c&apos;</span><br><span class="line">    ax.bar(x, y, zs=z, zdir=&apos;y&apos;, color = cs)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;x&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>绘制曲面</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">u = np.linspace(0, 2*np.pi, 100)</span><br><span class="line">v = np.linspace(0, np.pi, 100)</span><br><span class="line">x = 10 * np.outer(np.cos(u), np.sin(v))</span><br><span class="line">y = 10 * np.outer(np.sin(u), np.sin(v))</span><br><span class="line">z = 10 * np.outer(np.ones(np.size(u)), np.cos(v))</span><br><span class="line"></span><br><span class="line">ax.plot_surface(x, y, z, rstride=4, cstride=4, color=&apos;b&apos;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>绘制文字</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.gca(projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">zdirs = (None, &apos;x&apos;, &apos;y&apos;, &apos;z&apos;, (1, 1, 0), (1, 1, 1))</span><br><span class="line">xs = (1, 4, 4, 9, 4, 1)</span><br><span class="line">ys = (2, 5, 8, 10, 1, 2)</span><br><span class="line">zs = (10,3, 8, 9, 1, 8)</span><br><span class="line"></span><br><span class="line">for zdir, x, y, z in zip(zdirs, xs, ys, zs):</span><br><span class="line">    label = &apos;(%d, %d, %d), dir=%s&apos; % (x, y, z, zdir)</span><br><span class="line">    ax.text(x, y, z, label, zdir)</span><br><span class="line"></span><br><span class="line">ax.text(9, 0, 0, &apos;red&apos;, color=&apos;red&apos;)</span><br><span class="line">ax.text2D(0.05, 0.95, &quot;20 text&quot;, transform=ax.transAxes)</span><br><span class="line"></span><br><span class="line">ax.set_xlim3d(0,10)</span><br><span class="line">ax.set_ylim3d(0,10)</span><br><span class="line">ax.set_zlim3d(0,10)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;X axis&apos;)</span><br><span class="line">ax.set_ylabel(&apos;Y axis&apos;)</span><br><span class="line">ax.set_zlabel(&apos;Z axis&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h2 id="地图绘制（mpl-toolkits-basemap）"><a href="#地图绘制（mpl-toolkits-basemap）" class="headerlink" title="地图绘制（mpl_toolkits.basemap）"></a>地图绘制（mpl_toolkits.basemap）</h2><blockquote>
+<p>保存设计的API接口后，在swaggerHub网站的项目下，找到Add New Integrations，添加一个GitHub sync。保持账户登陆状态既可以生成token到swaggerhub，设置存放仓库路径即可。</p>
+</blockquote>
+<ul>
+<li>我测试了server stub下面的nodejs-server生成类型，同步到github网站后，在客户端用git工具，打开git bash。直接运行</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/11/28/geoist20181129.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1919,167 +2134,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/11/11/invo20.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SHI CHEN at CEA-IGP">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/chenshi.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MicroG for Earthquake Sciences">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/11/invo20.html" itemprop="url">参加微软亚洲研究院二十年庆典</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-11T16:41:52+08:00">
-                2018-11-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/11/invo20.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/11/invo20.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  38 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="参加微软亚洲研究院20周年庆典"><a href="#参加微软亚洲研究院20周年庆典" class="headerlink" title="参加微软亚洲研究院20周年庆典"></a>参加微软亚洲研究院20周年庆典</h3><p>1998-2008二十年历程，5000+论文产出，开放合作，创新模式值得学习。<br><img src="/images/invo1.jpg" alt="Alt text"><br><img src="/images/invo2.jpg" alt="Alt text">            </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2134,7 +2188,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2156,7 +2210,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -2262,7 +2316,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.8k</span>
+    <span title="Site words total count">4.3k</span>
   
 </div>
 
