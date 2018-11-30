@@ -7,8 +7,40 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/11/geoist181111.html</loc>
-        <lastmod>2018-11-30T10:05:46.852Z</lastmod>
+        <loc>https://igp-gravity.github.io/2018/01/21/test.html</loc>
+        <lastmod>2018-11-30T10:12:59.591Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/12/geoist181111.html</loc>
+        <lastmod>2018-11-30T10:12:13.100Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/10/28/mssummit2018.html</loc>
+        <lastmod>2018-11-30T10:12:01.470Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/26/geoist20181126.html</loc>
+        <lastmod>2018-11-30T10:10:58.330Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/29/geoist20181129.html</loc>
+        <lastmod>2018-11-30T10:10:46.568Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -31,14 +63,6 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/28/geoist20181129.html</loc>
-        <lastmod>2018-11-28T13:59:19.877Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://igp-gravity.github.io/2018/11/28/geoist20181128.html</loc>
         <lastmod>2018-11-27T23:36:10.414Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -49,14 +73,6 @@
     <url>
         <loc>https://igp-gravity.github.io/2018/11/27/geoist20181127.html</loc>
         <lastmod>2018-11-27T02:33:16.169Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://igp-gravity.github.io/2018/11/25/geoist20181126.html</loc>
-        <lastmod>2018-11-25T12:54:16.922Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -95,14 +111,6 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/11/mssummit2018.html</loc>
-        <lastmod>2018-11-11T08:48:32.894Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://igp-gravity.github.io/2018/11/11/invo20.html</loc>
         <lastmod>2018-11-11T08:44:56.439Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -113,14 +121,6 @@
     <url>
         <loc>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</loc>
         <lastmod>2018-01-21T00:44:50.210Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
-        <lastmod>2018-01-20T10:51:14.013Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -3,13 +3,77 @@
 
     
   <url>
-    <loc>https://igp-gravity.github.io/2018/11/11/geoist181111.html</loc>
-    <lastmod>2018-11-30T10:05:46.852Z</lastmod>
+    <loc>https://igp-gravity.github.io/2018/01/21/test.html</loc>
+    <lastmod>2018-11-30T10:12:59.591Z</lastmod>
+    <data>
+        <display>
+        <title>让科研生涯更开放</title>
+        <pubTime>2018-01-21T00:43:32.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/11/12/geoist181111.html</loc>
+    <lastmod>2018-11-30T10:12:13.100Z</lastmod>
     <data>
         <display>
         <title>Geoist计划正式启航</title>
-        <pubTime>2018-11-11T01:46:24.000Z</pubTime>
+        <pubTime>2018-11-12T01:46:24.000Z</pubTime>
         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/10/28/mssummit2018.html</loc>
+    <lastmod>2018-11-30T10:12:01.470Z</lastmod>
+    <data>
+        <display>
+        <title>ISPEC团队应邀参加2018微软技术生态大会</title>
+        <pubTime>2018-10-28T08:45:58.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/11/26/geoist20181126.html</loc>
+    <lastmod>2018-11-30T10:10:58.330Z</lastmod>
+    <data>
+        <display>
+        <title>纪念第一个DevOps项目框架完成</title>
+        <pubTime>2018-11-26T12:36:34.000Z</pubTime>
+        
+        <tag>geoist </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://igp-gravity.github.io/2018/11/29/geoist20181129.html</loc>
+    <lastmod>2018-11-30T10:10:46.568Z</lastmod>
+    <data>
+        <display>
+        <title>使用Swagger工具生成API文档</title>
+        <pubTime>2018-11-29T13:32:54.000Z</pubTime>
+        
+        <tag>geoist </tag>
+         
          
            
         </display>
@@ -52,23 +116,6 @@
 
     
   <url>
-    <loc>https://igp-gravity.github.io/2018/11/28/geoist20181129.html</loc>
-    <lastmod>2018-11-28T13:59:19.877Z</lastmod>
-    <data>
-        <display>
-        <title>使用Swagger工具生成API文档</title>
-        <pubTime>2018-11-28T13:32:54.000Z</pubTime>
-        
-        <tag>geoist </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://igp-gravity.github.io/2018/11/28/geoist20181128.html</loc>
     <lastmod>2018-11-27T23:36:10.414Z</lastmod>
     <data>
@@ -92,23 +139,6 @@
         <display>
         <title>测试Kubernetes部署和容器服务</title>
         <pubTime>2018-11-27T02:14:17.000Z</pubTime>
-        
-        <tag>geoist </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://igp-gravity.github.io/2018/11/25/geoist20181126.html</loc>
-    <lastmod>2018-11-25T12:54:16.922Z</lastmod>
-    <data>
-        <display>
-        <title>纪念第一个DevOps项目框架完成</title>
-        <pubTime>2018-11-25T12:36:34.000Z</pubTime>
         
         <tag>geoist </tag>
          
@@ -186,21 +216,6 @@
 
     
   <url>
-    <loc>https://igp-gravity.github.io/2018/11/11/mssummit2018.html</loc>
-    <lastmod>2018-11-11T08:48:32.894Z</lastmod>
-    <data>
-        <display>
-        <title>ISPEC团队应邀参加2018微软技术生态大会</title>
-        <pubTime>2018-11-11T08:45:58.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://igp-gravity.github.io/2018/11/11/invo20.html</loc>
     <lastmod>2018-11-11T08:44:56.439Z</lastmod>
     <data>
@@ -238,21 +253,6 @@
              
               <breadCrumb title="工作" url="https://igp-gravity.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://igp-gravity.github.io/2018/01/20/test.html</loc>
-    <lastmod>2018-01-20T10:51:14.013Z</lastmod>
-    <data>
-        <display>
-        <title>让科研生涯更开放</title>
-        <pubTime>2018-01-20T00:43:32.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>

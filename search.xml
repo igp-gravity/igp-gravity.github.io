@@ -10,7 +10,7 @@
   </entry>
   <entry>
     <title><![CDATA[使用Swagger工具生成API文档]]></title>
-    <url>%2F2018%2F11%2F28%2Fgeoist20181129.html</url>
+    <url>%2F2018%2F11%2F29%2Fgeoist20181129.html</url>
     <content type="text"><![CDATA[要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。 首先，在swaggerhub.com上面注册一个账户，选免费的即可 根据示例工程，自己在编辑器中修改既可以看到API文档情况。 其次，如果想保存这些API文档，而可以通过设置于Github账号同步，直接同步到github账号下的指定仓库。 保存设计的API接口后，在swaggerHub网站的项目下，找到Add New Integrations，添加一个GitHub sync。保持账户登陆状态既可以生成token到swaggerhub，设置存放仓库路径即可。 我测试了server stub下面的nodejs-server生成类型，同步到github网站后，在客户端用git工具，打开git bash。直接运行 1npm start 最后，如果从git上面下载到本地后。执行正确，在本机输入http://localhost:8080/docs/，可以看到下图： PS:通过自动生成的API文档，可以通过github仓库进行保存，再通过CD工具，可以部署到docker或者远程服务器，将API文档发布出来。当然也可以直接在swaggerhub上面浏览或用第三方工具如ReDoc来直接通过GitHub的pages功能进行发布（由于pages只能发布静态网页，所以nodejs项目的执行必须通过工具先生成静态网页才可以运行，如Hexo建站原理类似）。 github上测试项目地址，https://igp-gravity.github.io/geoistapi/]]></content>
       <tags>
         <tag>geoist</tag>
@@ -34,7 +34,7 @@
   </entry>
   <entry>
     <title><![CDATA[纪念第一个DevOps项目框架完成]]></title>
-    <url>%2F2018%2F11%2F25%2Fgeoist20181126.html</url>
+    <url>%2F2018%2F11%2F26%2Fgeoist20181126.html</url>
     <content type="text"><![CDATA[我们第一个地球物理开源项目，期望这是梦想的开始… 经过2周多组里的人努力工作，终于完成了一套协同工作环境 自动化文档、自动化集成和自动化部署，世界变化真快，从今开始实践Agile的软件设计方法 项目地址https://github.com/igp-gravity/geoist 参考文档https://geoist.readthedocs.io 我们的组织也有了，欢迎大家一起和我们践行现代化软件研发实践和共享精神https://github.com/gravity-igpcea 看着这些小图标，是不是有点高大上]]></content>
       <tags>
         <tag>geoist</tag>
@@ -70,9 +70,9 @@
     <content type="text"><![CDATA[基于Python的开源地球物理软件包-Geoist Geoist是基于Python语言的开源程序包，面向地球物理研究生、教学科研人员，也可为原型化的地球物理算法设计和科研提供基础软件服务。程序包功能包括：重磁位场数据处理、反演解释和模型评估；高精度时变重力数据平差等。 该程序包采用MIT开源协议，并在Github上进行公开发布和维护，代码编写遵循PEP8规范。Geoist程序包采用模块化设计，用户可基于Geoist程序包进行二次开发和集成应用。 项目网站：https://github.com/igp-gravity/geoist 更多关于Geoist]]></content>
   </entry>
   <entry>
-    <title><![CDATA[ISPEC团队应邀参加2018微软技术生态大会]]></title>
-    <url>%2F2018%2F11%2F11%2Fmssummit2018.html</url>
-    <content type="text"><![CDATA[ISPEC团队应邀参加2018微软技术生态大会 2018年10月24日-27日，由地球所牵头的“地震分析会商技术系统建设”项目团队，应邀参加在上海世博中心举行的微软技术暨生态大会（Microsoft Tech Summit 2018），并以“微软LUIS语义理解模型在地震会商技术系统中的应用”为题，进行了最新的地震行业AI技术成果分享。建立现代化与智能化地震会商技术平台系统，发挥现代科技优势，是提高地震预测预报服务能力的关键。地震分析会商技术系统是支持会商分析信息化、智能化的技术平台。通过自然语言处理（NLP）技术成果，地震行业团队基于微软LUIS语义理解模型和Bot框架，改进了原有的GUI设计，通过小G地震科研助手针对不同情景设计并实现了从前端的语义模型定义到后端服务流程匹配的全链条功能，初步搭建了一套新型交互式地震会商技术系统V1.0版本，并初步具备列装条件。]]></content>
+    <title><![CDATA[Geoist计划正式启航]]></title>
+    <url>%2F2018%2F11%2F12%2Fgeoist181111.html</url>
+    <content type="text"><![CDATA[Geoist项目计划即将出炉]]></content>
   </entry>
   <entry>
     <title><![CDATA[参加微软亚洲研究院二十年庆典]]></title>
@@ -80,9 +80,9 @@
     <content type="text"><![CDATA[参加微软亚洲研究院20周年庆典1998-2008二十年历程，5000+论文产出，开放合作，创新模式值得学习。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Geoist计划正式启航]]></title>
-    <url>%2F2018%2F11%2F11%2Fgeoist181111.html</url>
-    <content type="text"><![CDATA[Geoist项目计划即将出炉]]></content>
+    <title><![CDATA[ISPEC团队应邀参加2018微软技术生态大会]]></title>
+    <url>%2F2018%2F10%2F28%2Fmssummit2018.html</url>
+    <content type="text"><![CDATA[ISPEC团队应邀参加2018微软技术生态大会 2018年10月24日-27日，由地球所牵头的“地震分析会商技术系统建设”项目团队，应邀参加在上海世博中心举行的微软技术暨生态大会（Microsoft Tech Summit 2018），并以“微软LUIS语义理解模型在地震会商技术系统中的应用”为题，进行了最新的地震行业AI技术成果分享。建立现代化与智能化地震会商技术平台系统，发挥现代科技优势，是提高地震预测预报服务能力的关键。地震分析会商技术系统是支持会商分析信息化、智能化的技术平台。通过自然语言处理（NLP）技术成果，地震行业团队基于微软LUIS语义理解模型和Bot框架，改进了原有的GUI设计，通过小G地震科研助手针对不同情景设计并实现了从前端的语义模型定义到后端服务流程匹配的全链条功能，初步搭建了一套新型交互式地震会商技术系统V1.0版本，并初步具备列装条件。]]></content>
   </entry>
   <entry>
     <title><![CDATA[小店开张喽！！！]]></title>
@@ -91,7 +91,7 @@
   </entry>
   <entry>
     <title><![CDATA[让科研生涯更开放]]></title>
-    <url>%2F2018%2F01%2F20%2Ftest.html</url>
+    <url>%2F2018%2F01%2F21%2Ftest.html</url>
     <content type="text"><![CDATA[我的个人科研站点最近研究了一下 githubs pages 建站方法，io域名，完全免费，适合“穷苦”的科研人员啊 科研主页 steveshichen.github.io 地震科普写作 chenshi.readthedocs.io 还有我目前做的两个项目 重力平差项目 steveshichen.github.io/bayadj 三维反演项目 steveshichen.github.io/gravinv 再公布一下我个人的github账号，steveshichen ，与该站账号不同的是，这里面有关于我负责项目的最新科研进展。 欢迎大家关注，star吧！]]></content>
   </entry>
   <entry>
