@@ -87,18 +87,18 @@
 
 
 
-<meta name="description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的python绘图工具，首先，应该确保环境已经安装matplotlib，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplotlib常与numpy">
+<meta name="description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的，首先，应该确保环境已经安装matplotlib，numpy, mpl_toolkits，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplot">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python绘图实践记录">
 <meta property="og:url" content="https://igp-gravity.github.io/2018/11/28/python20181130.html">
 <meta property="og:site_name" content="MicroG for Earthquake Sciences">
-<meta property="og:description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的python绘图工具，首先，应该确保环境已经安装matplotlib，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplotlib常与numpy">
+<meta property="og:description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的，首先，应该确保环境已经安装matplotlib，numpy, mpl_toolkits，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplot">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-30T09:11:13.741Z">
+<meta property="og:updated_time" content="2018-11-30T09:20:12.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python绘图实践记录">
-<meta name="twitter:description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的python绘图工具，首先，应该确保环境已经安装matplotlib，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplotlib常与numpy">
+<meta name="twitter:description" content="用Python进行数据分析少不了绘图工具matplotlib matplotlib是免费的，首先，应该确保环境已经安装matplotlib，numpy, mpl_toolkits，具体怎么做应该不用说了吧！   matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplot">
 
 
 
@@ -401,7 +401,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,491 字
+                  1,994 字
                 </span>
               
 
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8 分钟
+                  11 分钟
                 </span>
               
             </div>
@@ -438,8 +438,8 @@
       
 
       
-        <h3 id="用Python进行数据分析少不了绘图工具matplotlib"><a href="#用Python进行数据分析少不了绘图工具matplotlib" class="headerlink" title="用Python进行数据分析少不了绘图工具matplotlib"></a>用Python进行数据分析少不了绘图工具matplotlib</h3><ul>
-<li>matplotlib是免费的python绘图工具，首先，应该确保环境已经安装matplotlib，具体怎么做应该不用说了吧！</li>
+        <h1 id="用Python进行数据分析少不了绘图工具matplotlib"><a href="#用Python进行数据分析少不了绘图工具matplotlib" class="headerlink" title="用Python进行数据分析少不了绘图工具matplotlib"></a>用Python进行数据分析少不了绘图工具matplotlib</h1><ul>
+<li>matplotlib是免费的，首先，应该确保环境已经安装matplotlib，numpy, mpl_toolkits，具体怎么做应该不用说了吧！</li>
 </ul>
 <blockquote>
 <p>matplotlib是Python常用的数据绘制包。它基于numpy的数组运算功能。matplotlib绘图功能强大，可以轻易的画出各种统计图形，比如散点图，条行图，饼图等。matplotlib常与numpy和scipy相配合，用于许多研究领域。</p>
@@ -472,11 +472,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.gca(projection=&apos;3d&apos;)       #   projection=&apos;3d&apos; 已经隐性调用了Axes3D</span><br><span class="line"></span><br><span class="line">#   ax = Axes3D(fig)            #   可以加上也可以不加</span><br><span class="line">th = np.linspace(-4 * np.pi, 4 * np.pi, 100)</span><br><span class="line">z = np.linspace(-2, 2, 100)</span><br><span class="line">r = z ** 2 + 1</span><br><span class="line">x = r * np.sin(th)</span><br><span class="line">y = r * np.cos(th)</span><br><span class="line"></span><br><span class="line">ax.plot(x, y, z, label=&apos;hello&apos;)     #   立体的</span><br><span class="line">ax.legend()</span><br><span class="line">plt.show()</span><br><span class="line">ax.plot(x, y, label=&apos;hello&apos;)        #   平面的</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D </span><br><span class="line"></span><br><span class="line">def randrange(n, vmin, vmax):</span><br><span class="line">    return (vmax-vmin)*np.random.rand(n) + vmin</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">n = 100</span><br><span class="line">for c, m, zl, zh in [(&apos;r&apos;, &apos;o&apos;, -50, -25), (&apos;b&apos;, &apos;^&apos;, -30, -5)]:</span><br><span class="line">    xs = randrange(n, 23, 32)</span><br><span class="line">    ys = randrange(n, 0, 100)</span><br><span class="line">    zs = randrange(n, zl, zh)</span><br><span class="line"></span><br><span class="line">    ax.scatter(xs, ys, zs, c=c, marker=m)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;x&apos;)</span><br><span class="line">ax.set_ylabel(&apos;y&apos;)</span><br><span class="line">ax.set_zlabel(&apos;z&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>轮廓图</p>
+<li>轮廓图</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import axes3d</span><br><span class="line">from matplotlib import cm</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">X, Y, Z = axes3d.get_test_data(0.05)        #   生成一系列的测试数据</span><br><span class="line">cset = ax.contour(X, Y, Z,cmap=cm.coolwarm) #   contour：生成轮廓图</span><br><span class="line">ax.clabel(cset, fontsize=9, inline=1)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line">#   修改</span><br><span class="line">cset = ax.contour(X, Y, Z,extend3d=True, cmap=cm.coolwarm)      #   颜色的填充</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>3D柱形图</p>
-</li>
+<ul>
+<li>3D柱形图</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.add_subplot(111, projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">for c, z in zip([&apos;r&apos;, &apos;g&apos;, &apos;b&apos;, &apos;y&apos;], (30, 20, 10, 0)):</span><br><span class="line">    x = np.arange(20)</span><br><span class="line">    y = np.random.rand(20)</span><br><span class="line">    cs = [c] * len(x)</span><br><span class="line">    cs[0] = &apos;c&apos;</span><br><span class="line">    ax.bar(x, y, zs=z, zdir=&apos;y&apos;, color = cs)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;x&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <ul>
@@ -487,12 +487,23 @@
 <li>绘制文字</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">from mpl_toolkits.mplot3d import Axes3D</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">fig = plt.figure()</span><br><span class="line">ax = fig.gca(projection=&apos;3d&apos;)</span><br><span class="line"></span><br><span class="line">zdirs = (None, &apos;x&apos;, &apos;y&apos;, &apos;z&apos;, (1, 1, 0), (1, 1, 1))</span><br><span class="line">xs = (1, 4, 4, 9, 4, 1)</span><br><span class="line">ys = (2, 5, 8, 10, 1, 2)</span><br><span class="line">zs = (10,3, 8, 9, 1, 8)</span><br><span class="line"></span><br><span class="line">for zdir, x, y, z in zip(zdirs, xs, ys, zs):</span><br><span class="line">    label = &apos;(%d, %d, %d), dir=%s&apos; % (x, y, z, zdir)</span><br><span class="line">    ax.text(x, y, z, label, zdir)</span><br><span class="line"></span><br><span class="line">ax.text(9, 0, 0, &apos;red&apos;, color=&apos;red&apos;)</span><br><span class="line">ax.text2D(0.05, 0.95, &quot;20 text&quot;, transform=ax.transAxes)</span><br><span class="line"></span><br><span class="line">ax.set_xlim3d(0,10)</span><br><span class="line">ax.set_ylim3d(0,10)</span><br><span class="line">ax.set_zlim3d(0,10)</span><br><span class="line"></span><br><span class="line">ax.set_xlabel(&apos;X axis&apos;)</span><br><span class="line">ax.set_ylabel(&apos;Y axis&apos;)</span><br><span class="line">ax.set_zlabel(&apos;Z axis&apos;)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<h2 id="地图绘制（mpl-toolkits-basemap）"><a href="#地图绘制（mpl-toolkits-basemap）" class="headerlink" title="地图绘制（mpl_toolkits.basemap）"></a>地图绘制（mpl_toolkits.basemap）</h2><blockquote>
-<p>保存设计的API接口后，在swaggerHub网站的项目下，找到Add New Integrations，添加一个GitHub sync。保持账户登陆状态既可以生成token到swaggerhub，设置存放仓库路径即可。</p>
+<h2 id="地图绘制（mpl-toolkits-basemap）"><a href="#地图绘制（mpl-toolkits-basemap）" class="headerlink" title="地图绘制（mpl_toolkits.basemap）"></a>地图绘制（mpl_toolkits.basemap）</h2><ul>
+<li>基本思路</li>
+</ul>
+<blockquote>
+<p>地图的大小、投影方法等重要信息，是在Basemap()的调用中实现的：<br>map = Basemap(projection=’ortho’,lat_0=35,lon_0=120,resolution=’l’)<br>projection参数规定了投影方法。改变投影方法，绘图结果也将非常不同。<br>城市所在位置是经纬度。我们想要把经纬度对应图像的像素点，需要转换：<br>x, y = map(lons, lats)<br>这个语句转换为图像上的位置。<br>最后，调用绘制散点图的方法scatter():<br>cs = map.scatter(i,j,s=size,marker=’o’,color=’#FF5600’)<br>在地图上画出数据。</p>
 </blockquote>
 <ul>
-<li>我测试了server stub下面的nodejs-server生成类型，同步到github网站后，在客户端用git工具，打开git bash。直接运行</li>
+<li>准备数据</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 保存到major_city.txt </span><br><span class="line"># 第一列是城市名，第二列是人口，第三第四列为纬度和经度，最后一列为所在国家。</span><br><span class="line">Shanghai 23019148  31.23N  121.47E  China</span><br><span class="line">Mumbai   12478447  18.96N  72.82E   India</span><br><span class="line">Karachi  13050000  24.86N  67.01E   Pakistan</span><br><span class="line">Delhi    16314838  28.67N  77.21E   India</span><br><span class="line">Manila   11855975  14.62N  120.97E  Philippines</span><br><span class="line">Seoul    23616000  37.56N  126.99E  Korea(South)</span><br><span class="line">Jakarta  28019545   6.18S  106.83E  Indonesia</span><br><span class="line">Tokyo    35682460  35.67N  139.77E  Japan</span><br><span class="line">Peking   19612368  39.91N  116.39E  China</span><br></pre></td></tr></table></figure>
+<ul>
+<li>绘图代码</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">from mpl_toolkits.basemap import Basemap</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#============================================# read data</span><br><span class="line">names = []</span><br><span class="line">pops  = []</span><br><span class="line">lats  = []</span><br><span class="line">lons  = []</span><br><span class="line">countries = []</span><br><span class="line">for line in file(&quot;../data/major_city&quot;):</span><br><span class="line">    info = line.split()</span><br><span class="line">    names.append(info[0])</span><br><span class="line">    pops.append(float(info[1]))</span><br><span class="line">    lat  = float(info[2][:-1])</span><br><span class="line">    if info[2][-1] == &apos;S&apos;: lat = -lat</span><br><span class="line">    lats.append(lat)</span><br><span class="line">    lon  = float(info[3][:-1])</span><br><span class="line">    if info[3][-1] == &apos;W&apos;: lon = -lon + 360.0</span><br><span class="line">    lons.append(lon)</span><br><span class="line">    country = info[4]</span><br><span class="line">    countries.append(country)</span><br><span class="line"></span><br><span class="line">#============================================</span><br><span class="line"># set up map projection with</span><br><span class="line"># use low resolution coastlines.</span><br><span class="line">map = Basemap(projection=&apos;ortho&apos;,lat_0=35,lon_0=120,resolution=&apos;l&apos;)</span><br><span class="line"># draw coastlines, country boundaries, fill continents.</span><br><span class="line">map.drawcoastlines(linewidth=0.25)</span><br><span class="line">map.drawcountries(linewidth=0.25)</span><br><span class="line"># draw the edge of the map projection region (the projection limb)</span><br><span class="line">map.drawmapboundary(fill_color=&apos;#689CD2&apos;)</span><br><span class="line"># draw lat/lon grid lines every 30 degrees.</span><br><span class="line">map.drawmeridians(np.arange(0,360,30))</span><br><span class="line">map.drawparallels(np.arange(-90,90,30))</span><br><span class="line"># Fill continent wit a different color</span><br><span class="line">map.fillcontinents(color=&apos;#BF9E30&apos;,lake_color=&apos;#689CD2&apos;,zorder=0)</span><br><span class="line"># compute native map projection coordinates of lat/lon grid.</span><br><span class="line">x, y = map(lons, lats)</span><br><span class="line">max_pop = max(pops)</span><br><span class="line"># Plot each city in a loop.</span><br><span class="line"># Set some parameters</span><br><span class="line">size_factor = 80.0</span><br><span class="line">y_offset    = 15.0</span><br><span class="line">rotation    = 30</span><br><span class="line">for i,j,k,name in zip(x,y,pops,names):</span><br><span class="line">    size = size_factor*k/max_pop</span><br><span class="line">    cs = map.scatter(i,j,s=size,marker=&apos;o&apos;,color=&apos;#FF5600&apos;)</span><br><span class="line">    plt.text(i,j+y_offset,name,rotation=rotation,fontsize=10)</span><br><span class="line"></span><br><span class="line">plt.title(&apos;Major Cities in Asia &amp; Population&apos;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上是常用的matplotlib绘图方法，一下子可能很难全部记住，但是没关系，只要记得回来copy即可。</p>
+</blockquote>
 
       
     </div>
@@ -725,7 +736,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用Python进行数据分析少不了绘图工具matplotlib"><span class="nav-number">1.</span> <span class="nav-text">用Python进行数据分析少不了绘图工具matplotlib</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二维绘图"><span class="nav-number"></span> <span class="nav-text">二维绘图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三维绘图（mpl-toolkits）"><span class="nav-number"></span> <span class="nav-text">三维绘图（mpl_toolkits）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#地图绘制（mpl-toolkits-basemap）"><span class="nav-number"></span> <span class="nav-text">地图绘制（mpl_toolkits.basemap）</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#用Python进行数据分析少不了绘图工具matplotlib"><span class="nav-number">1.</span> <span class="nav-text">用Python进行数据分析少不了绘图工具matplotlib</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二维绘图"><span class="nav-number">1.1.</span> <span class="nav-text">二维绘图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三维绘图（mpl-toolkits）"><span class="nav-number">1.2.</span> <span class="nav-text">三维绘图（mpl_toolkits）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#地图绘制（mpl-toolkits-basemap）"><span class="nav-number">1.3.</span> <span class="nav-text">地图绘制（mpl_toolkits.basemap）</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -759,7 +770,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.3k</span>
+    <span title="Site words total count">4.8k</span>
   
 </div>
 
