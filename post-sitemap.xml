@@ -7,8 +7,24 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/28/python20181130.html</loc>
-        <lastmod>2018-11-30T09:20:12.239Z</lastmod>
+        <loc>https://igp-gravity.github.io/2018/11/11/geoist181111.html</loc>
+        <lastmod>2018-11-30T10:05:46.852Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/01/20/today.html</loc>
+        <lastmod>2018-11-30T10:04:09.550Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/2018/11/30/python20181130.html</loc>
+        <lastmod>2018-11-30T10:03:07.029Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -71,14 +87,6 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/11/11/geoist181111.html</loc>
-        <lastmod>2018-11-14T13:03:32.620Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://igp-gravity.github.io/2018/11/13/geoist20181113.html</loc>
         <lastmod>2018-11-13T04:11:23.126Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -103,22 +111,6 @@
     </url>
 
     <url>
-        <loc>https://igp-gravity.github.io/2018/01/22/chenshi01.html</loc>
-        <lastmod>2018-01-22T00:58:10.405Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://igp-gravity.github.io/2018/01/21/paper1.html</loc>
-        <lastmod>2018-01-21T08:22:02.424Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://igp-gravity.github.io/2018/01/16/my-first-blog.html</loc>
         <lastmod>2018-01-21T00:44:50.210Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -137,14 +129,6 @@
     <url>
         <loc>https://igp-gravity.github.io/2018/01/18/kb.html</loc>
         <lastmod>2018-01-20T04:04:55.968Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://igp-gravity.github.io/2018/01/20/today.html</loc>
-        <lastmod>2018-01-20T00:49:51.169Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
