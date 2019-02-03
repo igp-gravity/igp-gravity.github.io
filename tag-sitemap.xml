@@ -52,7 +52,14 @@
 
     <url>
         <loc>https://igp-gravity.github.io/tags/Visualization/</loc>
-        <lastmod>2019-01-26T14:54:05.211Z</lastmod>
+        <lastmod>2019-02-03T04:46:20.757Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://igp-gravity.github.io/tags/ISPEC/</loc>
+        <lastmod>2019-02-03T04:56:21.782Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
