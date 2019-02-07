@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[地震会商系统视频培训教程之二]]></title>
+    <url>%2F2019%2F02%2F07%2Fispec20190207.html</url>
+    <content type="text"><![CDATA[第1季第2集-如何设计你自己的工作流程？ 难度：容易 时长：约40分钟 对象：列装单位的负责人和业务人员 演示例子：有 要点提示：1、流程体系与工作流编辑器，Datist数据科学版获取、安装和环境特点；2、常用节点介绍；3、应用场景（数据绘图与可视化、数据统计与预处理、GIS与地震目录分析）。 知识点： 1、流程设计：Datist数据科学版安装和环境特点 2、节点用法：Datist数据科学版常用节点介绍 3、实例分析：数据绘图与可视化、数据统计与预处理、GIS与地震目录分析 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e2.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
+      <tags>
+        <tag>ISPEC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[地震会商系统视频培训教程]]></title>
     <url>%2F2019%2F02%2F03%2Fispec20190203.html</url>
     <content type="text"><![CDATA[第1季第1集-地震分析会商技术系统是什么？ 难度：容易 时长：25-30分钟 对象：列装单位的负责人和业务人员 演示例子：无 要点提示：地震分析会商系统的缘起、设计、定位、组成和特点-20分钟；你必须知道的一些资源获取方法和学习方式（地震科研助手、小G、Datist流程设计软件）。 知识点： 1、地震信息化的核心是业务信息化 2、去中心化的运行理念 3、宽平台、厚技术、微应用 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e1.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载]]></content>
@@ -11,7 +19,7 @@
   <entry>
     <title><![CDATA[鲁甸地震科技产品]]></title>
     <url>%2F2019%2F01%2F26%2Fvis20190126.html</url>
-    <content type="text"><![CDATA[翻出几年前做的一段视频，新年开始准备继续从操旧业了…鲁甸地震后的一些科技产品(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/XMLY1-R1-1n.mp4","pic":"/images/geoist-logo.PNG"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频下载]]></content>
+    <content type="text"><![CDATA[翻出几年前做的一段视频，新年开始准备继续从操旧业了…鲁甸地震后的一些科技产品(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/XMLY1-R1-1n.mp4","pic":"/images/geoist-logo.PNG"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频下载]]></content>
       <tags>
         <tag>Visualization</tag>
       </tags>
