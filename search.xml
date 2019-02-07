@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[地震会商系统视频培训教程之二]]></title>
     <url>%2F2019%2F02%2F07%2Fispec20190207.html</url>
-    <content type="text"><![CDATA[第1季第2集-如何设计你自己的工作流程？ 难度：容易 时长：约40分钟 对象：列装单位的负责人和业务人员 演示例子：有 要点提示：1、流程体系与工作流编辑器，Datist数据科学版获取、安装和环境特点；2、常用节点介绍；3、应用场景（数据绘图与可视化、数据统计与预处理、GIS与地震目录分析）。 知识点： 1、流程设计：Datist数据科学版安装和环境特点 2、节点用法：Datist数据科学版常用节点介绍 3、实例分析：数据绘图与可视化、数据统计与预处理、GIS与地震目录分析 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e2.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
+    <content type="text"><![CDATA[第1季第2集-如何设计你自己的工作流程？ 难度：容易 时长：约40分钟 对象：列装单位的负责人和业务人员 演示例子：有 要点提示：1、流程体系与工作流编辑器，Datist数据科学版获取、安装和环境特点；2、常用节点介绍；3、应用场景（数据绘图与可视化、数据统计与预处理、GIS与地震目录分析）。 知识点： 1、流程设计：Datist数据科学版安装和环境特点 2、节点用法：Datist数据科学版常用节点介绍 3、实例分析：数据绘图与可视化、数据统计与预处理、GIS与地震目录分析 (function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e2.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
       <tags>
         <tag>ISPEC</tag>
       </tags>
