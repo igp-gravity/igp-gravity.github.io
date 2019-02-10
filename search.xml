@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[流程编辑工具：Datist地震科学版]]></title>
+    <url>%2F2019%2F02%2F11%2Fispec20190211.html</url>
+    <content type="text"><![CDATA[数据专家（Datist）地震科学版简介Datist，即数据专家，是服务于大数据时代场景式（Context）数据治理与融合的工具。该软件能够根据用户场景需求组织数据与加工业务流程，通过可视化的节点与函数的组合来完成数据的获取、组织、整合、提纯及有形化表达。Datist地震科学版是经过17-18年两年的实践积累，由地震会商技术系统项目组和长安大学专门为地震行业数据分析而研发的一个独立产品，凡是在地震科研助手微信企业号中的成员，下载安装包后，都可以通过扫描二维码的方式，自动获得授权文件，免费使用。 数据专家的基本原理就是把数据处理过程中涉及的处理方法抽象成一个个的节点之间的连接网络，来解决业务系统构建中的各种问题。而Datist地震科学版为行业用户提供了一个开放的平台，允许用户自定义组建自己的数据处理系统，完成特定的数据分析、处理任务。 大家看完地震会上技术系统培训视频第一集，如果对流程编辑感兴趣，请在开始学习第二到四集培训视频之前下载Datist地震科学版软件，并一起跟着视频的例子来学习流程编辑工具的用法。 1、特点： 针对地震行业特点，进行多项针对性的优化； 支持自定义节点开发，方便扩展； 支持微信扫描二维码自动授权模式； 优化编译程序和系统设置，启动和运行速度加快； 优化后的绘图、GIS插件； 新增地震行业常用矢量底图数据。 更多信息请查阅Datist官方文档 2、安装步骤： 第一步：下载后安装，第一次登陆，请打开企业微信进入“地震科研助手”，通过扫描二维码自动获取授权文件 第二步：进入程序界面后，进入“帮助”菜单，点击“关于”，授权信息如下图所示 3、下载地址：软件Download地址]]></content>
+      <tags>
+        <tag>ISPEC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[地震会商系统视频培训教程之五]]></title>
     <url>%2F2019%2F02%2F10%2Fispec20190210.html</url>
-    <content type="text"><![CDATA[第1季第5集-现代化软件开发与可持续的集成方法 难度：一般 时长：约35分钟 对象：业务人员 演示例子：无 要点提示：1、DevOps的软件开发理念；2、Python语言与Github仓库；3、Geoist开源项目计划。 知识点： 1、DevOps开发理念vs瀑布式开发，敏捷式开发工具； 2、Python与Anaconda集成环境； 3、Github仓库的使用，管理你的代码； 4、CI/CD的实现方法； 5、地学家软件包计划，如何参与Geoist软件包开发。 (function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e5.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载]]></content>
+    <content type="text"><![CDATA[第1季第5集-现代化软件开发与可持续的集成方法 难度：一般 时长：约35分钟 对象：业务人员 演示例子：无 要点提示：1、DevOps的软件开发理念；2、Python语言与Github仓库；3、Geoist开源项目计划。 知识点： 1、DevOps开发理念vs瀑布式开发，敏捷式开发工具； 2、Python与Anaconda集成环境； 3、Github仓库的使用，管理你的代码； 4、CI/CD的实现方法； 5、地学家软件包计划，如何参与Geoist软件包开发。 (function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e5.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载]]></content>
       <tags>
         <tag>ISPEC</tag>
       </tags>
@@ -11,7 +19,7 @@
   <entry>
     <title><![CDATA[地震会商系统视频培训教程之四]]></title>
     <url>%2F2019%2F02%2F09%2Fispec20190209.html</url>
-    <content type="text"><![CDATA[第1季第4集-学会利用“轮子”来帮助你完成更多工作 难度：较难 时长：约50分钟 对象：业务人员 演示例子：有 要点提示：1、第三方工具集成方法；2、前兆数据处理与曲线绘制；3、自定义节点开发方法。 知识点： 1、流程变量、eCharts与GMT6.0集成 2、Python语言与自定义节点 3、自定义节点开发介绍 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e4.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
+    <content type="text"><![CDATA[第1季第4集-学会利用“轮子”来帮助你完成更多工作 难度：较难 时长：约50分钟 对象：业务人员 演示例子：有 要点提示：1、第三方工具集成方法；2、前兆数据处理与曲线绘制；3、自定义节点开发方法。 知识点： 1、流程变量、eCharts与GMT6.0集成 2、Python语言与自定义节点 3、自定义节点开发介绍 (function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e4.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
       <tags>
         <tag>ISPEC</tag>
       </tags>
@@ -27,7 +35,7 @@
   <entry>
     <title><![CDATA[地震会商系统视频培训教程之二]]></title>
     <url>%2F2019%2F02%2F07%2Fispec20190207.html</url>
-    <content type="text"><![CDATA[第1季第2集-如何设计你自己的工作流程？ 难度：容易 时长：约40分钟 对象：列装单位的负责人和业务人员 演示例子：有 要点提示：1、流程体系与工作流编辑器，Datist数据科学版获取、安装和环境特点；2、常用节点介绍；3、应用场景（数据绘图与可视化、数据统计与预处理、GIS与地震目录分析）。 知识点： 1、流程设计：Datist数据科学版安装和环境特点 2、节点用法：Datist数据科学版常用节点介绍 3、实例分析：数据绘图与可视化、数据统计与预处理、GIS与地震目录分析 (function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e2.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
+    <content type="text"><![CDATA[第1季第2集-如何设计你自己的工作流程？ 难度：容易 时长：约40分钟 对象：列装单位的负责人和业务人员 演示例子：有 要点提示：1、流程体系与工作流编辑器，Datist数据科学版获取、安装和环境特点；2、常用节点介绍；3、应用场景（数据绘图与可视化、数据统计与预处理、GIS与地震目录分析）。 知识点： 1、流程设计：Datist数据科学版安装和环境特点 2、节点用法：Datist数据科学版常用节点介绍 3、实例分析：数据绘图与可视化、数据统计与预处理、GIS与地震目录分析 (function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e2.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载演示流程实例DMS下载]]></content>
       <tags>
         <tag>ISPEC</tag>
       </tags>
@@ -35,7 +43,7 @@
   <entry>
     <title><![CDATA[地震会商系统视频培训教程]]></title>
     <url>%2F2019%2F02%2F03%2Fispec20190203.html</url>
-    <content type="text"><![CDATA[第1季第1集-地震分析会商技术系统是什么？ 难度：容易 时长：25-30分钟 对象：列装单位的负责人和业务人员 演示例子：无 要点提示：地震分析会商系统的缘起、设计、定位、组成和特点-20分钟；你必须知道的一些资源获取方法和学习方式（地震科研助手、小G、Datist流程设计软件）。 知识点： 1、地震信息化的核心是业务信息化 2、去中心化的运行理念 3、宽平台、厚技术、微应用 (function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e1.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载]]></content>
+    <content type="text"><![CDATA[第1季第1集-地震分析会商技术系统是什么？ 难度：容易 时长：25-30分钟 对象：列装单位的负责人和业务人员 演示例子：无 要点提示：地震分析会商系统的缘起、设计、定位、组成和特点-20分钟；你必须知道的一些资源获取方法和学习方式（地震科研助手、小G、Datist流程设计软件）。 知识点： 1、地震信息化的核心是业务信息化 2、去中心化的运行理念 3、宽平台、厚技术、微应用 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"/attachs/ispecs1e1.mp4","pic":"/images/ispec.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})() 视频教程PPT下载]]></content>
       <tags>
         <tag>ISPEC</tag>
       </tags>
