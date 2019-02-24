@@ -324,6 +324,190 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/11/29/geoist20181129.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHI CHEN at CEA-IGP">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/chenshi.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MicroG for Earthquake Sciences">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/29/geoist20181129.html" itemprop="url">使用Swagger工具生成API文档</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-29T21:32:54+08:00">
+                2018-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/29/geoist20181129.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/29/geoist20181129.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  389 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。"><a href="#要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。" class="headerlink" title="要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。"></a>要实现微服务框架API接口必不可少，使用Swagger工具可以更加方便的生成API框架和对应的接口文档。</h3><ul>
+<li>首先，在swaggerhub.com上面注册一个账户，选免费的即可</li>
+</ul>
+<blockquote>
+<p>根据示例工程，自己在编辑器中修改既可以看到API文档情况。</p>
+</blockquote>
+<ul>
+<li>其次，如果想保存这些API文档，而可以通过设置于Github账号同步，直接同步到github账号下的指定仓库。</li>
+</ul>
+<blockquote>
+<p>保存设计的API接口后，在swaggerHub网站的项目下，找到Add New Integrations，添加一个GitHub sync。保持账户登陆状态既可以生成token到swaggerhub，设置存放仓库路径即可。</p>
+</blockquote>
+<ul>
+<li>我测试了server stub下面的nodejs-server生成类型，同步到github网站后，在客户端用git工具，打开git bash。直接运行</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<ul>
+<li>最后，如果从git上面下载到本地后。执行正确，在本机输入<a href="http://localhost:8080/docs/，可以看到下图：" target="_blank" rel="noopener">http://localhost:8080/docs/，可以看到下图：</a></li>
+</ul>
+<p><img src="/images/swaggerAPI.png" alt="Alt text"></p>
+<blockquote>
+<p>PS:通过自动生成的API文档，可以通过github仓库进行保存，再通过CD工具，可以部署到docker或者远程服务器，将API文档发布出来。当然也可以直接在swaggerhub上面浏览或用第三方工具如ReDoc来直接通过GitHub的pages功能进行发布（由于pages只能发布静态网页，所以nodejs项目的执行必须通过工具先生成静态网页才可以运行，如Hexo建站原理类似）。</p>
+</blockquote>
+<p>github上测试项目地址，<a href="https://igp-gravity.github.io/geoistapi/">https://igp-gravity.github.io/geoistapi/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/11/28/geoist20181128.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1895,169 +2079,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://igp-gravity.github.io/2018/10/28/mssummit2018.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="SHI CHEN at CEA-IGP">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/chenshi.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MicroG for Earthquake Sciences">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/28/mssummit2018.html" itemprop="url">ISPEC团队应邀参加2018微软技术生态大会</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-28T16:45:58+08:00">
-                2018-10-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/28/mssummit2018.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/28/mssummit2018.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  307 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body han-init-context" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="ISPEC团队应邀参加2018微软技术生态大会"><a href="#ISPEC团队应邀参加2018微软技术生态大会" class="headerlink" title="ISPEC团队应邀参加2018微软技术生态大会"></a>ISPEC团队应邀参加2018微软技术生态大会</h3><blockquote>
-<p>2018年10月24日-27日，由地球所牵头的“地震分析会商技术系统建设”项目团队，应邀参加在上海世博中心举行的微软技术暨生态大会（Microsoft Tech Summit 2018），并以“微软LUIS语义理解模型在地震会商技术系统中的应用”为题，进行了最新的地震行业AI技术成果分享。<br><img src="/images/ispec1.jpg" alt="Alt text"><br>建立现代化与智能化地震会商技术平台系统，发挥现代科技优势，是提高地震预测预报服务能力的关键。地震分析会商技术系统是支持会商分析信息化、智能化的技术平台。通过自然语言处理（NLP）技术成果，地震行业团队基于微软LUIS语义理解模型和Bot框架，改进了原有的GUI设计，通过小G地震科研助手针对不同情景设计并实现了从前端的语义模型定义到后端服务流程匹配的全链条功能，初步搭建了一套新型交互式地震会商技术系统V1.0版本，并初步具备列装条件。<br><img src="/images/ispec2.jpg" alt="Alt text">            </p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2112,7 +2133,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2252,7 +2273,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.2k</span>
+    <span title="Site words total count">6.9k</span>
   
 </div>
 
